@@ -1,0 +1,142 @@
+body{
+    font-family:'Poppins', sans-serif;
+    max-width: 1180px;
+    margin: 0 auto;
+    background-image: url("../imagens/modeSun.png");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body.dark-mode{
+    background-image: url("../imagens/modeMoon.png");
+
+} 
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.logo{
+    margin-top: 14px;
+}
+
+header .logo,
+header .img-btn{
+    width: 30px;
+    transition: 0.2s ease-int-out;
+}
+
+
+header #btn-change-theme{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .img-btn:hover,
+main .card-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#Pokedex{
+    height: 50px;
+}
+
+main{
+    padding: 25px;
+}
+
+main .list-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .card-pokemon{
+    background-color: #c3d9eb;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .card-pokemon:hover{
+    background-color: #96e9e6;
+}
+
+.dark-mode .card-pokemon{
+    background-color: #959198d7;
+}
+
+main .card-pokemon .information{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333; 
+    border-radius: 10px;
+}
+
+main .card-pokemon .information span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .card-pokemon .gif{
+    width: 90px;
+    height: 90px;
+}
+
+main .card-pokemon .types{
+    display: flex;
+    gap: 15px;
+}
+
+main .card-pokemon .type{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grass {
+    background-color: #7ac74c;
+}
+
+.posion {
+    background-color: #df67ddfb;
+}
+
+.fire {
+    background-color: #ee8130;
+}
+
+.water{
+    background-color: #6390f0;
+}
+
+.bug{
+    background-color: #a6b91a;
+}
+
+.flying{
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+
+.normal{
+    background-color: #a4acaf;
+}
+
+main .description{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px ;
+}
+
